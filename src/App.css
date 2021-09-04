@@ -1,16 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 21px;
 }
 
 .App-header {
@@ -20,19 +9,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.top  {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theNav {
+  width: 65%;
+}
+.theAddTask {
+  width: 35%;
+}
+
+
+.nav {
+  margin: 0 auto;
+  width: 50%;
+
+  background: #14336b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  list-style: none;
+}
+
+.nav_item {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.nav_item:hover, .nav_item:focus {
+  transform: scale(1.5);
+}
+
+.TodoList {
+  width: 50%;
 }

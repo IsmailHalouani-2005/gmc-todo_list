@@ -1,0 +1,50 @@
+@import "AddTask";
+
+.task {
+    padding: 0 2.5em;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover, &:focus {
+        .fa-edit {
+            visibility: visible;
+        }
+    }
+}
+
+.fa-check-square {
+    color: rgb(28, 151, 28);
+}
+.fa-times-circle {
+    color:rgb(212, 0, 0)
+}
+
+.fa-edit {
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 1 ease;
+    &:hover, &:focus {
+        visibility: visible;
+    }
+}
+
+.fa-times {
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 1 ease;
+    &:hover, &:focus {
+        visibility: visible;
+    }
+}
+
+ .inputEdit > input {
+     position: absolute;
+     visibility: hidden;
+     padding: .25em .5em;
+     margin-top: 1rem;
+     border: transparent;
+     border-radius: 50em;
+     outline: none;
+ }

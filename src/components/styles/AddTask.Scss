@@ -1,0 +1,40 @@
+.theForm {
+    position: absolute;
+}
+
+.form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 30%;
+    transform: translateY(-100%);
+    visibility: hidden;
+    &:focus {
+        outline: none;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    label {
+        font-size: .65em;
+    }
+    input {
+        border: transparent;
+        padding: .25em .5em;
+        border-radius: 50em;
+    }
+}
+
+.fa-plus-circle {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus {
+        color: rgb(0, 224, 19);
+    }
+}
